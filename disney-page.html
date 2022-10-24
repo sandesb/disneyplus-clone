@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html>
+<title>
+</title>
+<head>
+<style>
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+p{
+    z-index: 12;
+}
+body{
+    font-family: Arial;
+    height: 1600px;
+    background-color: rgb(26, 29, 41);
+}
+nav{
+    background: #0e0b1499;
+
+    height: 100px;
+    width:100%;
+    position: fixed;
+    z-index: 6;
+}
+.image{
+    display: inline-block;
+    width: 150px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+.logo-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
+
+nav ul{
+    float: center;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 12px -25px;
+}
+.home-hover:after,.search-hover:after,
+.add-hover:after,.star-hover:after,
+.movies-hover:after,.tv-hover:after  {
+    content: '';
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 30px;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .home-hover:after{
+    left: 250px;
+    width:7%;
+
+  }
+  .search-hover:after{
+    left: 430px;
+    width:8%;
+
+  }
+  .add-hover:after{
+    left: 640px;
+    width: 9%;
+  }
+  .star-hover:after{
+    left:860px;
+    width: 10%;
+  }
+  .movies-hover:after{
+    left: 1100px;
+    width: 7%;
+  }
+  .tv-hover:after{
+    left: 1290px;
+    width: 7%;
+  }
+
+  .home-hover:hover:after,.search-hover:hover:after,
+  .add-hover:hover:after, .star-hover:hover:after,
+  .movies-hover:hover:after,.tv-hover:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1.07;
+    font-family: Helvetica, sans-serif;
+    padding-left: 150px;
+}
+nav ul li #home{
+    color: white;
+    position: absolute;
+    top:38%;
+    left: 260px;
+    width: 30px;
+}
+nav ul li #search{
+    color: white;
+    position: absolute;
+    top:38%;
+    left: 435px;
+    width: 30px;
+}
+nav ul li #add{
+    color: white;
+    position: absolute;
+    top:38%;
+    left: 635px;
+    width: 30px;
+}
+nav ul li #star{
+    color: white;
+    position: absolute;
+    top:38%;
+    left: 870px;
+    width: 30px;
+}
+nav ul li #movies{
+    color: white;
+    position: absolute;
+    top:38%;
+    left: 1100px;
+    width: 30px;
+}
+nav ul li #tv{
+    color: white;
+    position: absolute;
+    top:38%;
+    left: 1290px;
+    width: 30px;
+}
+.image2{
+    width: 70px;
+    height: 70px;
+    margin: 15px 0 0 380px;
+}
+.marvel-video{
+    position: fixed;
+    z-index: -1;
+   
+}
+.marvel-bg{
+    height:1500px;
+}
+
+
+</style>
+<link rel="stylesheet" href="css/flex-css.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+<nav>
+<div class="logo-box">
+<img class="image" src="disney/logo1.svg">
+<ul>
+    <li class="home-hover"><i class="material-icons" id="home">home</i><a href="disneyplus.html">Home</a></li>
+    <li class="search-hover"><i class="material-icons" id="search">search</i><a href="#"></i>Search</a></li>
+    <li class="add-hover"><i class="material-symbols-outlined" id="add">add</i><a href="#"><i class="fa fa-add" id="home"></i>Watchlist</a></li>
+    <li class="star-hover"><i class="material-symbols-outlined" id="star">star</i><a href="#">Originals</a></li>
+    <li class="movies-hover"><i class="material-symbols-outlined" id="movies">theaters</i><a href="#">Movies</a></li>
+    <li class="tv-hover"><i class="material-symbols-outlined" id="tv">tv</i><a href="#">Series</a></li>
+</ul>
+<img class="image2" src="disney/pp.png">
+</nav>
+<div class="marvel-bg">
+        <img class="marvel-video" src="disney/disney-bg.jfif" width="1920" height="1080" >
+</div>
+
+
+<div class="star-flex">
+
+</div>
+<div class="banner-flex">
+<div><p class="para1">New Episodes</p>
+</div> 
+<div class="recom1">
+    <img class="img1"src="disney/rots.webp">
+    <img class="img2"src="disney/mando.webp">
+    <img class="img3"src="logo-star.jpg">
+    <img class="img4"src="disney/rogueone.jpg">
+    <img class="img5"src="logo-star.jpg">
+</div>   
+
+<div><p class="para1">New Episodes</p>
+</div> 
+<div class="recom1">
+    <img class="img1"src="disney/rots.webp">
+    <img class="img2"src="disney/mando.webp">
+    <img class="img3"src="logo-star.jpg">
+    <img class="img4"src="disney/rogueone.jpg">
+    <img class="img5"src="logo-star.jpg">
+</div>  
+
+<div><p class="para1">New Episodes</p>
+</div> 
+
+<div class="recom1">
+    <img class="img1"src="disney/rots.webp">
+    <img class="img2"src="disney/mando.webp">
+    <img class="img3"src="logo-star.jpg">
+    <img class="img4"src="disney/rogueone.jpg">
+    <img class="img5"src="logo-star.jpg">
+</div>  
+
+<div><p class="para1">New Episodes</p>
+</div> 
+<div class="recom1">
+    <img class="img1"src="disney/rots.webp">
+    <img class="img2"src="disney/mando.webp">
+    <img class="img3"src="logo-star.jpg">
+    <img class="img4"src="disney/rogueone.jpg">
+    <img class="img5"src="logo-star.jpg">
+</div>  
+<div class="footer">
+<div class="footer1">
+    <div class="logo-end">
+        <img class="logo-div"src="disney/logo1.svg">
+    </div>
+</div>
+    <div class="para-end">
+        <p class="para-format"> Privacy Policy</p>
+        <p class="para-format"> Cookies Policy</p>
+        <p class="para-format"> Europe Rights</p>
+        <p class="para-format"> Agreement</p>
+        <p class="para-format"> Help</p>
+        <p class="para-format"> Supported Devices</p>
+        <p class="para-format"> About Us</p>
+    </div>
+    <div class="footer3">
+        <p class="para-format"> &#169;	Disney. All Rights Reserved.</p>
+    </div>
+</div>
+
+</div>  
+    </body>
+</html>
